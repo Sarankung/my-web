@@ -1,0 +1,15 @@
+<#include "header.html">
+<div class="container">
+    <#list post as p>
+    <div class="card">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <a href="/detail?id=${p.id}" >
+        ${ p.topic}
+            </a>
+        </li>
+    </ul>
+    </div>
+    </#list>
+</div>
+<#include "footer.html">
